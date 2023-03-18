@@ -1,0 +1,129 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background: rgba(18, 164, 115, 0.753);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  border: 1px solid black;
+  background: gray;
+  max-width: 700px;
+  width: 90%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 100px 500px;
+  grid-template-areas: "header header" "numbers symbols";
+}
+main header {
+  background: whitesmoke;
+  grid-area: header;
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 2rem;
+  overflow: hidden;
+}
+main section {
+  background: rgb(36, 106, 196);
+  grid-area: numbers;
+}
+main footer {
+  grid-area: symbols;
+}
+main button {
+  border-radius: 10px;
+  transition: 0.6s ease;
+  cursor: auto;
+}
+main button:hover {
+  background: rgb(179, 46, 46);
+  color: whitesmoke;
+}
+
+.numbers {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas: "sept huit neuf" "quatre cinq six" "un deux trois" "zero zero point";
+}
+.numbers .point {
+  grid-area: point;
+}
+.numbers .zero {
+  grid-area: zero;
+}
+.numbers .un {
+  grid-area: un;
+}
+.numbers .deux {
+  grid-area: deux;
+}
+.numbers .trois {
+  grid-area: trois;
+}
+.numbers .quatre {
+  grid-area: quatre;
+}
+.numbers .cinq {
+  grid-area: cinq;
+}
+.numbers .six {
+  grid-area: six;
+}
+.numbers .sept {
+  grid-area: sept;
+}
+.numbers .huit {
+  grid-area: huit;
+}
+.numbers .neuf {
+  grid-area: neuf;
+}
+
+footer {
+  padding: 10px;
+  background: rgb(169, 154, 16);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas: "ce c" "a z" "q f" "d f";
+}
+footer .ce {
+  grid-area: ce;
+}
+footer .c {
+  grid-area: c;
+}
+footer .aa {
+  grid-area: a;
+}
+footer .zz {
+  grid-area: z;
+}
+footer .ee {
+  grid-area: q;
+}
+footer .rr {
+  grid-area: f;
+}
+footer .tt {
+  grid-area: d;
+}/*# sourceMappingURL=calculatrice.css.map */
